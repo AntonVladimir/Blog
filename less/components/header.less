@@ -7,7 +7,9 @@
 	.inner();
 }
 
-// ===========  h1 ===============
+//----------------------
+// h1 
+// ---------------------
 
 .main__h1{
 	display: block;
@@ -20,7 +22,9 @@
 	float: left;
 }
 
-// ========== ul header__list ========
+// ------------------------
+//   ul header__list
+// ------------------------
 
 .header__list{
 	outline: 1px dotted #fff;     //outline
@@ -29,34 +33,43 @@
 	list-style: none;
 	width: 280px;
 	float: right;
+}
 
-	.list__li{
+// ----------------------
+//   list__li
+// ----------------------
+
+.list__li{
 		width: 100%;
 		margin-bottom: 1px;
 
 
-		&:last-child{
-			margin-bottom: 0;
-		}
+	&:last-child{
+		margin-bottom: 0;
+	}
+}
 
-		a{
-			text-decoration: none;
-			display: block;
-			width: auto;
-			padding-top: 8px;
-			padding-bottom: 8px;
-			padding-left: 10px;
+// ----------------------------
+//     list__a
+// ----------------------------
 
-			font-size: 12px;
-			line-height: 18px;
-			text-transform: capitalize;
-			background-color: @background-static-a;
-			color: @static-a;
+.list__a{
+	text-decoration: none;
+	display: block;
+	width: auto;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	padding-left: 10px;
 
-			&:hover{
-				background-color: @background-hover-a;
-				color: @hover-a-color;
-			}
-		}
+	font-size: 12px;
+	line-height: 18px;
+	text-transform: capitalize;
+	background-color: @background-static-a;
+	color: @static-a;
+
+
+	&:hover{
+		background-color: @background-hover-a;
+		color: @hover-a-color;
 	}
 }
