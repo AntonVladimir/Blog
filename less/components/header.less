@@ -1,7 +1,62 @@
 .main__header{
+	padding: 35px 0;
 	background-color: @background-header;
 }
 
 .header__inner{
 	.inner();
+}
+
+// ===========  h1 ===============
+
+.main__h1{
+	display: block;
+	margin: @margin0;
+	margin-top: 34px;
+	font-size: 30px;
+	line-height: 20px;
+	font-weight: 300;
+	color: #fff;
+	float: left;
+}
+
+// ========== ul header__list ========
+
+.header__list{
+	outline: 1px dotted #fff;     //outline
+	margin: @margin0;
+	padding: 0;
+	list-style: none;
+	width: 280px;
+	float: right;
+
+	.list__li{
+		width: 100%;
+		margin-bottom: 1px;
+
+
+		&:last-child{
+			margin-bottom: 0;
+		}
+
+		a{
+			text-decoration: none;
+			display: block;
+			width: auto;
+			padding-top: 8px;
+			padding-bottom: 8px;
+			padding-left: 10px;
+
+			font-size: 12px;
+			line-height: 18px;
+			text-transform: capitalize;
+			background-color: @background-static-a;
+			color: @static-a;
+
+			&:hover{
+				background-color: @background-hover-a;
+				color: @hover-a-color;
+			}
+		}
+	}
 }

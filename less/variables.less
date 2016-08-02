@@ -1,7 +1,15 @@
+
+// --------------------------------------
 //     ширины
 // --------------------------------------
 
 @width1024: 1024px;
+
+// -------------------------------------
+//    сброс margin
+// -------------------------------------
+
+@margin0: 0;
 
 // -------------------------------------
 //    примесь
@@ -13,18 +21,28 @@
 	margin: 0 auto;
 }
 
+.clearfix:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
 // --------------------------------------
 //     цвета
 // --------------------------------------
 
-@background-wrapper: #2d3844;
-@background-header: #222a33;
+@background-wrapper: #233543;
+@background-header: #182630;
 
 @gradient-data40: #404851;
 @gradient-data41: #414952;
 
 @text-header: #fff;
 @text-aside: #ede9dc;
+@static-a: #54595d;
+@background-static-a: #283742;
+@background-hover-a: #405260;
+@hover-a-color: #BBBBB4;
 
 @text-content: @background-wrapper;
 @text-span: #b9b6ac;
