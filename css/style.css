@@ -74,14 +74,8 @@ hr {
   outline: 1px dotted #f00;
   width: 900px;
   margin: 0 auto;
-}
-.content {
-  display: block;
-  width: 576px;
-  height: auto;
-  padding-left: 20px;
-  border: 2px solid #fff;
-  float: left;
+  padding-top: 18px;
+  padding-bottom: 82px;
 }
 .content__me {
   outline: 1px dotted #f0f;
@@ -89,4 +83,14 @@ hr {
   height: auto;
   padding-left: 20px;
   float: right;
+}
+.content {
+  display: block;
+  width: 576px;
+  height: auto;
+  padding-left: 20px;
+  border: 2px solid #fff;
+  border-radius: 6px;
+  background-color: #EFEADC;
+  float: left;
 }
