@@ -86,11 +86,18 @@ hr {
 }
 .content {
   display: block;
-  width: 576px;
+  width: 556px;
   height: auto;
   padding-left: 20px;
+  padding-right: 20px;
   border: 2px solid #fff;
   border-radius: 6px;
   background-color: #EFEADC;
   float: left;
+}
+.content__post {
+  outline: 1px dotted #000;
+  display: block;
+  padding-top: 18px;
+  padding-bottom: 58px;
 }
