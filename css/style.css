@@ -107,11 +107,11 @@ hr {
   float: left;
 }
 .content__post {
-  outline: 1px dotted #000;
   display: block;
   padding-top: 18px;
   padding-bottom: 58px;
   position: relative;
+  border-bottom: 1px solid #c4c3ba;
 }
 .content__p {
   display: block;
@@ -137,4 +137,34 @@ hr {
   right: 0;
   cursor: pointer;
   border-bottom: 1px solid #182630;
+}
+.post__a:hover {
+  color: #5F6D77;
+  border-color: #5F6D77;
+}
+.header__post {
+  outline: 1px dotted #000;
+  width: auto;
+  height: auto;
+}
+.header__post span {
+  font-size: 11px;
+  font-weight: normal;
+  color: #C6C0B5;
+}
+.post__h2 {
+  display: block;
+  margin: 0;
+  width: 600px;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 20px;
+  color: #233543;
+  float: left;
+}
+.post__data {
+  outline: 1px dotted #00f;
+  display: block;
+  width: 42px;
+  height: auto;
 }
