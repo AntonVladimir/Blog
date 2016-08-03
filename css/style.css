@@ -83,3 +83,10 @@ hr {
   border: 2px solid #fff;
   float: left;
 }
+.content__me {
+  outline: 1px dotted #f0f;
+  width: 276px;
+  height: auto;
+  padding-left: 20px;
+  float: right;
+}
