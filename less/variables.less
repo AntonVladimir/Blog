@@ -42,10 +42,24 @@
 //    примесь
 // -------------------------------------
 
+	// main-content.less
 .inner{
 	outline: 1px dotted #f00;    //outline
 	width: @width900;
 	margin: 0 auto;
+}
+
+	//  main-content.less/ children*.less 
+.rule__content_p{
+	display: block;
+	margin: 0;
+	margin-bottom: 24px;
+	width: auto;
+	height: auto;
+	font-size: 12px;
+	font-weight: normal;
+	line-height: 19px;
+	color: @content-p;
 }
 
 .clearfix:after{
@@ -74,8 +88,11 @@
 
 @text-content: @background-wrapper;
 @text-span: #b9b6ac;
-@content-p: #3b3a37;
+// @content-p: #3b3a37;
+@content-p: #393734;
 @post-a: @background-header;
 @line-post: #7f8281;
 
 @line-hr: #c4c3ba;
+
+@color-a: #182630;
