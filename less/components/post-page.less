@@ -1,16 +1,19 @@
 .post__page{
+	display: block;
 	width: 200px;
 	height: auto;
-	margin: 0 auto;
 	padding-top: 4px;
 	padding-bottom: 6px;
 	background-color: #34424D;
 	border-top-left-radius: @size4;
 	border-top-right-radius: @size4;
 	border: 1px solid #fff;
-	border-bottom-color: transparent;
-
+	border-bottom-color: #131A22;
 	background: linear-gradient(to bottom, #3b4753 0%,#3b4753 60%,#131a22 100%);
+	position: absolute;
+	bottom: -2px;
+	left: 50%;
+	margin-left: -100px;
 }
 
 // --------------------------------
@@ -18,15 +21,22 @@
 // --------------------------------
 
 .page__mix{
-	outline: 1px dotted #f00;     //outline
 	display: inline-block;
-	height: auto;
-	font-size: 11px;
+	height: auto;	
 	font-weight: normal;
-	line-height: 16px;
+	line-height: @size16;  //variables.less "ширины"
 	text-decoration: none;
 	border-bottom: 1px solid #D5D2C8;
 	color: #D5D2C8;
+	position: relative;
+
+	&:before{
+		display: block;
+		width: @size8;    //variables.less "ширины"
+		height: @size16;  //variables.less "ширины"
+		position: absolute;
+		top: 0;
+	}
 }
 
 .page__previus{
@@ -35,6 +45,11 @@
 
 	margin-left: 20px;
 	float: left;
+
+	&:before{
+		content: @fa-var-angle-double-left;
+		left: -12px;
+	}
 }
 
 // -------------------------------
@@ -47,4 +62,15 @@
 	
 	margin-right: 20px;
 	float: right;
+
+	&:before{
+		content: @fa-var-angle-double-right;
+		right: -12px;
+	}
+}
+// ----------------------------------
+//  кастыль с размером шрифта
+// ----------------------------------
+a.page__next,a.page__previus{
+	font-size: 11px;
 }

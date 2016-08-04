@@ -3,3 +3,7 @@ Gruntfile.js
 node_modules/
 
 .htaccess
+
+awesome/
+
+fonts/
