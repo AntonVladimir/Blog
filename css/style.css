@@ -1,5 +1,4 @@
 .inner {
-  outline: 1px dotted #f00;
   width: 900px;
   margin: 0 auto;
 }
@@ -32,7 +31,6 @@
   background-color: #182630;
 }
 .header__inner {
-  outline: 1px dotted #f00;
   width: 900px;
   margin: 0 auto;
 }
@@ -82,14 +80,12 @@ hr {
   display: none;
 }
 .main__content {
-  outline: 1px dotted #f00;
   width: 900px;
   margin: 0 auto;
   padding-top: 18px;
   padding-bottom: 82px;
 }
 .content__me {
-  outline: 1px dotted #f0f;
   width: 276px;
   height: auto;
   padding-left: 20px;
@@ -104,6 +100,7 @@ hr {
   border: 2px solid #fff;
   border-radius: 6px;
   background-color: #EFEADC;
+  box-shadow: 0px 2px #000000;
   float: left;
 }
 .content__post {
@@ -148,6 +145,7 @@ hr {
 .header__post {
   width: auto;
   height: auto;
+  margin-bottom: 16px;
 }
 .post__data {
   display: inline-block;
@@ -203,8 +201,52 @@ hr {
   color: #C6C0B5;
 }
 .post__page {
-  outline: 1px dotted #000;
   width: 200px;
   height: auto;
   margin: 0 auto;
+  padding-top: 4px;
+  padding-bottom: 6px;
+  background-color: #34424D;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border: 1px solid #fff;
+  border-bottom-color: transparent;
+  background: linear-gradient(to bottom, #3b4753 0%, #3b4753 60%, #131a22 100%);
+}
+.page__mix {
+  outline: 1px dotted #f00;
+  display: inline-block;
+  height: auto;
+  font-size: 11px;
+  font-weight: normal;
+  line-height: 16px;
+  text-decoration: none;
+  border-bottom: 1px solid #D5D2C8;
+  color: #D5D2C8;
+}
+.page__previus {
+  outline: 1px dotted #f00;
+  display: inline-block;
+  height: auto;
+  font-size: 11px;
+  font-weight: normal;
+  line-height: 16px;
+  text-decoration: none;
+  border-bottom: 1px solid #D5D2C8;
+  color: #D5D2C8;
+  margin-left: 20px;
+  float: left;
+}
+.page__next {
+  outline: 1px dotted #f00;
+  display: inline-block;
+  height: auto;
+  font-size: 11px;
+  font-weight: normal;
+  line-height: 16px;
+  text-decoration: none;
+  border-bottom: 1px solid #D5D2C8;
+  color: #D5D2C8;
+  margin-right: 20px;
+  float: right;
 }

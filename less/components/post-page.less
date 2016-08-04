@@ -1,6 +1,50 @@
 .post__page{
-	outline: 1px dotted #000;     //outline
 	width: 200px;
 	height: auto;
 	margin: 0 auto;
+	padding-top: 4px;
+	padding-bottom: 6px;
+	background-color: #34424D;
+	border-top-left-radius: @size4;
+	border-top-right-radius: @size4;
+	border: 1px solid #fff;
+	border-bottom-color: transparent;
+
+	background: linear-gradient(to bottom, #3b4753 0%,#3b4753 60%,#131a22 100%);
+}
+
+// --------------------------------
+//  page-previos
+// --------------------------------
+
+.page__mix{
+	outline: 1px dotted #f00;     //outline
+	display: inline-block;
+	height: auto;
+	font-size: 11px;
+	font-weight: normal;
+	line-height: 16px;
+	text-decoration: none;
+	border-bottom: 1px solid #D5D2C8;
+	color: #D5D2C8;
+}
+
+.page__previus{
+	
+	.page__mix();
+
+	margin-left: 20px;
+	float: left;
+}
+
+// -------------------------------
+//   page__next
+// -------------------------------
+
+.page__next{
+
+	.page__mix();
+	
+	margin-right: 20px;
+	float: right;
 }
