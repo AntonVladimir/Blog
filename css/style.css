@@ -286,6 +286,94 @@ a.page__next,
 a.page__previus {
   font-size: 11px;
 }
+.about__me {
+  display: block;
+  width: auto;
+  height: auto;
+  margin-bottom: 35px;
+  padding-top: 17px;
+}
+.about__h3 {
+  margin: 0;
+  margin-bottom: 6px;
+  font-size: 17px;
+  font-weight: normal;
+  line-height: 18px;
+  color: #ede9dc;
+}
+.my__content {
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top: 1px solid #3A4953;
+  border-bottom: 1px solid #3A4953;
+}
+.my__content img {
+  width: 87px;
+  height: 104px;
+  float: left;
+}
+.my-content__p {
+  margin: 0;
+  width: 183px;
+  height: auto;
+  font-size: 11px;
+  font-weight: normal;
+  line-height: 18px;
+  color: #ede9dc;
+  float: right;
+}
+.subscribe {
+  display: block;
+  width: auto;
+  height: auto;
+  margin-bottom: 35px;
+}
+.subscribe__h3 {
+  outline: 1px dotted #f00;
+  margin: 0;
+  margin-bottom: 7px;
+  font-size: 17px;
+  font-weight: normal;
+  line-height: 18px;
+  color: #ede9dc;
+}
+.subscribe__list {
+  outline: 1px dotted #000;
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.subscribe__list li {
+  border-top: 1px solid #3A4953;
+}
+.subscribe__list li:last-child {
+  border-bottom: 1px solid #3A4953;
+}
+.subscribe__list li a {
+  display: block;
+  width: auto;
+  height: auto;
+  padding: 2px 0;
+  padding-left: 33px;
+  text-decoration: none;
+  font-size: 11px;
+  font-weight: normal;
+  line-height: 15px;
+  color: #ede9dc;
+  position: relative;
+}
+.subscribe__list li a:before {
+  outline: 1px dotted #fff;
+  content: "";
+  display: block;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  top: 3px;
+  left: 12px;
+}
 /*!
  *  Font Awesome 4.6.1 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
@@ -377,37 +465,61 @@ a.page__previus {
   margin-left: .3em;
 }
 .fa-spin {
+  -webkit-animation: fa-spin 2s infinite linear;
   animation: fa-spin 2s infinite linear;
 }
 .fa-pulse {
+  -webkit-animation: fa-spin 1s infinite steps(8);
   animation: fa-spin 1s infinite steps(8);
 }
-@keyframes fa-spin {
+@-webkit-keyframes fa-spin {
   0% {
+    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
     transform: rotate(359deg);
   }
 }
 .fa-rotate-90 {
   -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
   transform: rotate(90deg);
 }
 .fa-rotate-180 {
   -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
   transform: rotate(180deg);
 }
 .fa-rotate-270 {
   -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)";
+  -webkit-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
   transform: rotate(270deg);
 }
 .fa-flip-horizontal {
   -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)";
+  -webkit-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
   transform: scale(-1, 1);
 }
 .fa-flip-vertical {
   -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
+  -webkit-transform: scale(1, -1);
+  -ms-transform: scale(1, -1);
   transform: scale(1, -1);
 }
 :root .fa-rotate-90,
@@ -415,8 +527,7 @@ a.page__previus {
 :root .fa-rotate-270,
 :root .fa-flip-horizontal,
 :root .fa-flip-vertical {
-  -webkit-filter: none;
-          filter: none;
+  filter: none;
 }
 .fa-stack {
   position: relative;
