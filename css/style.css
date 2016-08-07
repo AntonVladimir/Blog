@@ -45,7 +45,6 @@
   float: left;
 }
 .header__list {
-  outline: 1px dotted #fff;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -308,11 +307,6 @@ a.page__previus {
   border-top: 1px solid #3A4953;
   border-bottom: 1px solid #3A4953;
 }
-.my__content img {
-  width: 87px;
-  height: 104px;
-  float: left;
-}
 .my-content__p {
   margin: 0;
   width: 183px;
@@ -425,11 +419,24 @@ a.page__previus {
   display: block;
   width: 12px;
   height: auto;
+  -moz-font-size: 5px;
   font-size: 5px;
   text-align: center;
   position: absolute;
   top: auto;
   left: 12px;
+}
+.my__component__figure {
+  display: block;
+  margin: 0;
+  width: 87px;
+  height: 104px;
+  background-color: #ede9dc;
+  float: left;
+}
+.my__component__figure img {
+  width: 87px;
+  height: 104px;
 }
 /*!
  *  Font Awesome 4.6.1 by @davegandy - http://fontawesome.io - @fontawesome
