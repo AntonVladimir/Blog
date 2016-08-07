@@ -330,7 +330,6 @@ a.page__previus {
   margin-bottom: 35px;
 }
 .subscribe__h3 {
-  outline: 1px dotted #f00;
   margin: 0;
   margin-bottom: 7px;
   font-size: 17px;
@@ -339,7 +338,6 @@ a.page__previus {
   color: #ede9dc;
 }
 .subscribe__list {
-  outline: 1px dotted #000;
   display: block;
   margin: 0;
   padding: 0;
@@ -365,13 +363,72 @@ a.page__previus {
   position: relative;
 }
 .subscribe__list li a:before {
-  outline: 1px dotted #fff;
-  content: "";
+  content: "\f143";
+  display: block;
+  width: auto;
+  color: #f58550;
+  font-size: 15px;
+  position: absolute;
+  top: auto;
+  left: 12px;
+}
+.categories__h3 {
+  margin: 0;
+  margin-bottom: 7px;
+  font-size: 17px;
+  font-weight: normal;
+  line-height: 18px;
+  color: #ede9dc;
+}
+.categories__list {
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.categories__list li {
+  border-top: 1px solid #3A4953;
+  position: relative;
+}
+.categories__list li:last-child {
+  border-bottom: 1px solid #3A4953;
+}
+.categories__list li span {
+  display: block;
+  padding-right: 10px;
+  width: 70px;
+  height: auto;
+  text-align: right;
+  font-size: 11px;
+  font-weight: normal;
+  line-height: 18px;
+  color: #ede9dc;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.cataegories__list__a {
+  display: block;
+  width: auto;
+  height: auto;
+  padding-left: 33px;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 11px;
+  font-weight: normal;
+  line-height: 18px;
+  color: #ede9dc;
+  position: relative;
+}
+.cataegories__list__a:before {
+  content: "\f111";
   display: block;
   width: 12px;
-  height: 12px;
+  height: auto;
+  font-size: 5px;
+  text-align: center;
   position: absolute;
-  top: 3px;
+  top: auto;
   left: 12px;
 }
 /*!
@@ -388,8 +445,7 @@ a.page__previus {
   font-style: normal;
 }
 .fa {
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
+  font-family: FontAwesome;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -558,6 +614,12 @@ a.page__previus {
 }
 .fa-angle-double-right:before {
   content: "\f101";
+}
+.fa-circle:before {
+  content: "\f111";
+}
+.fa-rss-square:before {
+  content: "\f143";
 }
 .sr-only {
   position: absolute;
