@@ -276,9 +276,6 @@ a.page__next,
 a.page__previus {
   font-size: 11px;
 }
-hr {
-  display: none;
-}
 .content__me {
   width: 276px;
   height: auto;
@@ -646,4 +643,7 @@ hr {
   margin: 0;
   overflow: visible;
   clip: auto;
+}
+hr {
+  display: none;
 }
