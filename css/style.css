@@ -16,6 +16,11 @@
 p.content__p_null {
   margin-bottom: 0;
 }
+p.content__p_width {
+  width: 340px;
+  display: inline-block;
+  vertical-align: middle;
+}
 .clearfix:after {
   content: "";
   display: table;
@@ -278,6 +283,21 @@ p.content__p_null {
 a.page__next,
 a.page__previus {
   font-size: 11px;
+}
+.span__p {
+  display: inline-block;
+  vertical-align: middle;
+  padding-top: 17px;
+  padding-bottom: 15px;
+  width: 206px;
+  height: auto;
+  font-size: 20px;
+  font-weight: lighter;
+  line-height: 23px;
+  font-style: italic;
+  color: #233543;
+  border-top: 1px solid #8D9191;
+  border-bottom: 1px solid #8D9191;
 }
 .content__me {
   width: 276px;
