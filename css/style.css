@@ -5,13 +5,16 @@
 .rule__content_p {
   display: block;
   margin: 0;
-  margin-bottom: 24px;
+  margin-bottom: 17px;
   width: auto;
   height: auto;
   font-size: 12px;
   font-weight: normal;
   line-height: 19px;
   color: #393734;
+}
+p.content__p_null {
+  margin-bottom: 0;
 }
 .clearfix:after {
   content: "";
@@ -108,7 +111,7 @@
 .header__post {
   width: auto;
   height: auto;
-  margin-bottom: 16px;
+  margin-bottom: 14px;
 }
 .post__data {
   display: inline-block;
@@ -166,7 +169,7 @@
 .content__p {
   display: block;
   margin: 0;
-  margin-bottom: 24px;
+  margin-bottom: 17px;
   width: auto;
   height: auto;
   font-size: 12px;
