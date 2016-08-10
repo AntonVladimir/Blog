@@ -26,6 +26,9 @@ p.content__p_width {
   display: table;
   clear: both;
 }
+.content .visible__list {
+  display: block;
+}
 .wrapper {
   display: block;
   width: 1024px;
@@ -304,6 +307,9 @@ a.page__previus {
   width: auto;
   height: auto;
   margin-bottom: 16px;
+}
+.content__list {
+  display: none;
 }
 .content__me {
   width: 276px;
