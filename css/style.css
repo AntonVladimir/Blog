@@ -299,6 +299,11 @@ a.page__previus {
   border-top: 1px solid #8D9191;
   border-bottom: 1px solid #8D9191;
 }
+.post__content__block {
+  width: auto;
+  height: auto;
+  margin-bottom: 16px;
+}
 .content__me {
   width: 276px;
   height: auto;
